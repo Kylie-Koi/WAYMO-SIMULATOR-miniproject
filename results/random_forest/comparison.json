@@ -1,0 +1,57 @@
+{
+  "experiment": {
+    "train_days": 70,
+    "test_days": 14,
+    "fleet_size": 30,
+    "seed": 42,
+    "cost_scope": "modeled variable mileage cost only",
+    "cost_per_mile_usd": 0.67
+  },
+  "model_quality": {
+    "mae_requests_per_zone_interval": 1.067290175456595,
+    "r2": 0.3541772964362111
+  },
+  "feature_importance": {
+    "previous_total_demand": 0.2712800290067712,
+    "previous_zone_demand": 0.2109440805192519,
+    "zone": 0.14536215080888523,
+    "hour_sin": 0.12182097001098438,
+    "hour_cos": 0.1115970957421118,
+    "day_of_week": 0.08964247676690229,
+    "rain": 0.025466648308057272,
+    "is_weekend": 0.012471410082496115,
+    "event_here": 0.011415138754539944
+  },
+  "without_model": {
+    "strategy": "random_cruising_baseline",
+    "requests": 10738,
+    "served_requests": 10643,
+    "service_rate_percent": 99.11529148817284,
+    "reposition_miles": 19404.60000000001,
+    "pickup_miles": 11661.999999999998,
+    "empty_miles": 31066.600000000006,
+    "occupied_miles": 64393.70000000002,
+    "total_miles": 95460.30000000002,
+    "average_pickup_minutes": 3.6524789376428948,
+    "modeled_variable_operating_cost": 63958.40100000001
+  },
+  "with_random_forest": {
+    "strategy": "random_forest",
+    "requests": 10738,
+    "served_requests": 10643,
+    "service_rate_percent": 99.11529148817284,
+    "reposition_miles": 18418.599999999995,
+    "pickup_miles": 7797.899999999994,
+    "empty_miles": 26216.49999999999,
+    "occupied_miles": 64406.60000000001,
+    "total_miles": 90623.1,
+    "average_pickup_minutes": 2.442262519966174,
+    "modeled_variable_operating_cost": 60717.477000000006
+  },
+  "comparison": {
+    "empty_miles_reduction_percent": 15.61194337326909,
+    "pickup_time_reduction_percent": 33.13411078717203,
+    "operating_cost_reduction_percent": 5.067237375118252,
+    "service_rate_change_percentage_points": 0.0
+  }
+}
