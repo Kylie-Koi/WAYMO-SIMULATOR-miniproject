@@ -1,5 +1,5 @@
 # WAYMO-SIMULATOR
-Trial RL session-other av projects are better, this is a trial repo, might be adding friends to this one. 
+## Trial RL session-other av projects are better, this is a trial repo, might be adding friends to this one. 
 
 This project contains two related prototypes:
 
