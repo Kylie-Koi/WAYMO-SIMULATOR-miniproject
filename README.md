@@ -1,5 +1,5 @@
-# WAYMO-SIMULATOR-RL
-
+# WAYMO-SIMULATOR
+Trial RL session-other av projects are better, this is a trial repo, might be adding friends to this one
 This project contains two related prototypes:
 
 - `main.py`: an animated pygame robotaxi demonstration.
